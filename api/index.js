@@ -4,7 +4,7 @@ const route = require("../route/route");
 const cors = require("cors");
 const app = express();
 app.use(cors()); //define first
-app.use("/api/tasks", route); //after all connection define this || error
+// app.use("/api/tasks", route); //after all connection define this || error
 
 require("dotenv").config();
 const port = process.env.PORT;
@@ -20,4 +20,4 @@ const start = async () => {
   }
 };
 start();
-
+// hello
